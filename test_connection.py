@@ -1,17 +1,13 @@
 import MySQLdb
 
-DB_HOST = 'localhost'
-DB_USER = 'root'        
-DB_PASS = '1868Salam@'
+DB_HOST = "localhost"
+DB_USER = "root"
+DB_PASS = "1868Salam@"
 
 try:
     # 1. Connect to the MySQL SERVER (Note: we are not specifying a db yet)
     print(f"Attempting to connect to MySQL as {DB_USER}...")
-    connection = MySQLdb.connect(
-        host=DB_HOST, 
-        user=DB_USER, 
-        passwd=DB_PASS
-    )
+    connection = MySQLdb.connect(host=DB_HOST, user=DB_USER, passwd=DB_PASS)
     print("✅ Connection to MySQL Server successful!")
 
     # 2. Create a Cursor (This is like a pointer to send commands)
